@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Seasonal Jobs Auto Apply</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #f8fafc;
+      color: #1e293b;
+      line-height: 1.7;
+    }
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 48px 24px 80px;
+    }
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      margin-bottom: 36px;
+    }
+    .lang-btn {
+      padding: 8px 18px;
+      border-radius: 6px;
+      border: 1px solid #cbd5e1;
+      background: white;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      color: #64748b;
+    }
+    .lang-btn.active {
+      background: #2563eb;
+      color: white;
+      border-color: #2563eb;
+    }
+    .policy { display: none; }
+    .policy.active { display: block; }
+    h1 {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0f172a;
+      margin-bottom: 6px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #64748b;
+      margin-bottom: 36px;
+    }
+    h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: #0f172a;
+      margin: 32px 0 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    p { margin-bottom: 12px; font-size: 14.5px; color: #334155; }
+    ul { margin: 8px 0 12px 20px; }
+    li { font-size: 14.5px; color: #334155; margin-bottom: 6px; }
+    a { color: #2563eb; }
+    .highlight {
+      background: #eff6ff;
+      border-left: 3px solid #2563eb;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 16px 0;
+      font-size: 14px;
+      color: #1e40af;
+    }
+    footer {
+      margin-top: 48px;
+      padding-top: 20px;
+      border-top: 1px solid #e2e8f0;
+      font-size: 13px;
+      color: #94a3b8;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+
+  <div class="lang-switch">
+    <button class="lang-btn active" onclick="switchLang('en')">🇺🇸 English</button>
+    <button class="lang-btn" onclick="switchLang('pt')">🇧🇷 Português</button>
+  </div>
+
+  <!-- ===== ENGLISH ===== -->
+  <div class="policy active" id="policy-en">
+    <h1>Privacy Policy</h1>
+    <p class="subtitle">Seasonal Jobs Auto Apply · Last updated: July 29, 2026</p>
+
+    <div class="highlight">
+      Seasonal Jobs Auto Apply does not collect, store, or share your personal data on any external server. All data stays on your device.
+    </div>
+
+    <h2>1. Who We Are</h2>
+    <p>
+      Seasonal Jobs Auto Apply is a Google Chrome extension developed by Lucas Correa.
+      For any privacy-related questions, contact us at
+      <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>.
+    </p>
+
+    <h2>2. What Data We Access</h2>
+    <p>To provide its features, the extension accesses the following data:</p>
+    <ul>
+      <li><strong>Gmail account (OAuth):</strong> used exclusively to send job application emails on your behalf and to detect recruiter replies to those emails. We never read, store, or share the content of your inbox.</li>
+      <li><strong>Job listing data:</strong> job title, employer name, email address, phone number, and location displayed on the seasonaljobs.dol.gov page you are visiting.</li>
+      <li><strong>Your résumé PDF:</strong> uploaded by you directly in the extension and stored locally in your browser.</li>
+      <li><strong>Application history:</strong> a local log of jobs you have applied to, including dates and Gmail thread IDs used to detect replies.</li>
+    </ul>
+
+    <h2>3. How We Store Data</h2>
+    <p>
+      All data — including your résumé PDF, cover letter templates, profile settings, and application history —
+      is stored exclusively in <strong>chrome.storage.local</strong>, which means it stays on your device and
+      is never transmitted to any external server owned by us.
+    </p>
+
+    <h2>4. Gmail API Usage</h2>
+    <p>
+      The extension uses the Gmail API solely to:
+    </p>
+    <ul>
+      <li>Send job application emails with your résumé attached (<code>gmail.send</code> scope)</li>
+      <li>Check whether a recruiter has replied to a sent email thread (<code>gmail.readonly</code> scope — only thread metadata is read, not email content)</li>
+    </ul>
+    <p>
+      Our use of Gmail API data complies with the
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">
+        Google API Services User Data Policy
+      </a>, including the Limited Use requirements.
+    </p>
+
+    <h2>5. Data Sharing</h2>
+    <p>
+      We do not sell, rent, or share your data with any third party. The only external service the extension
+      communicates with is the Gmail API (Google) for the purposes described above.
+    </p>
+
+    <h2>6. Subscription and Payments</h2>
+    <p>
+      Seasonal Jobs Auto Apply is offered as a paid subscription with a free trial period.
+      Payment processing is handled by third-party providers (such as Stripe or similar).
+      We do not store your payment card information. Please review the privacy policy of the
+      payment provider for details on how billing data is handled.
+    </p>
+
+    <h2>7. Data Deletion</h2>
+    <p>
+      Since all data is stored locally on your device, you can delete it at any time by:
+    </p>
+    <ul>
+      <li>Removing the extension from Chrome (this deletes all stored data)</li>
+      <li>Using the browser's "Clear site data" option for extension storage</li>
+    </ul>
+    <p>
+      To revoke Gmail access, go to
+      <a href="https://myaccount.google.com/permissions" target="_blank">Google Account Permissions</a>
+      and remove Seasonal Jobs Auto Apply.
+    </p>
+
+    <h2>8. Children's Privacy</h2>
+    <p>
+      This extension is not directed at children under 13. We do not knowingly collect
+      any information from children.
+    </p>
+
+    <h2>9. Changes to This Policy</h2>
+    <p>
+      We may update this policy occasionally. The "Last updated" date at the top will reflect any changes.
+      Continued use of the extension after changes constitutes acceptance of the updated policy.
+    </p>
+
+    <h2>10. Contact</h2>
+    <p>
+      For any questions or concerns regarding this privacy policy, please contact:<br>
+      <strong>Lucas Correa</strong><br>
+      <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>
+    </p>
+
+    <footer>© 2026 Lucas Correa · Seasonal Jobs Auto Apply</footer>
+  </div>
+
+  <!-- ===== PORTUGUÊS ===== -->
+  <div class="policy" id="policy-pt">
+    <h1>Política de Privacidade</h1>
+    <p class="subtitle">Seasonal Jobs Auto Apply · Última atualização: 29 de julho de 2026</p>
+
+    <div class="highlight">
+      O Seasonal Jobs Auto Apply não coleta, armazena nem compartilha seus dados pessoais em nenhum servidor externo. Todos os dados permanecem no seu dispositivo.
+    </div>
+
+    <h2>1. Quem Somos</h2>
+    <p>
+      Seasonal Jobs Auto Apply é uma extensão para o Google Chrome desenvolvida por Lucas Correa.
+      Para dúvidas relacionadas à privacidade, entre em contato pelo e-mail
+      <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>.
+    </p>
+
+    <h2>2. Quais Dados Acessamos</h2>
+    <p>Para fornecer suas funcionalidades, a extensão acessa os seguintes dados:</p>
+    <ul>
+      <li><strong>Conta Gmail (OAuth):</strong> utilizada exclusivamente para enviar e-mails de candidatura em seu nome e detectar respostas de recrutadores. Nunca lemos, armazenamos ou compartilhamos o conteúdo da sua caixa de entrada.</li>
+      <li><strong>Dados da vaga:</strong> cargo, nome do empregador, e-mail, telefone e localização exibidos na página do seasonaljobs.dol.gov que você está visitando.</li>
+      <li><strong>Seu currículo em PDF:</strong> enviado por você diretamente na extensão e armazenado localmente no seu navegador.</li>
+      <li><strong>Histórico de candidaturas:</strong> registro local das vagas para as quais você se candidatou, incluindo datas e IDs de thread do Gmail usados para detectar respostas.</li>
+    </ul>
+
+    <h2>3. Como Armazenamos os Dados</h2>
+    <p>
+      Todos os dados — incluindo seu currículo em PDF, modelos de cover letter, configurações de perfil e
+      histórico de candidaturas — são armazenados exclusivamente no <strong>chrome.storage.local</strong>,
+      ou seja, ficam no seu dispositivo e nunca são transmitidos a nenhum servidor externo de nossa propriedade.
+    </p>
+
+    <h2>4. Uso da API do Gmail</h2>
+    <p>A extensão usa a API do Gmail exclusivamente para:</p>
+    <ul>
+      <li>Enviar e-mails de candidatura com seu currículo em anexo (escopo <code>gmail.send</code>)</li>
+      <li>Verificar se um recrutador respondeu a um e-mail enviado (escopo <code>gmail.readonly</code> — apenas metadados da thread são lidos, não o conteúdo dos e-mails)</li>
+    </ul>
+    <p>
+      O uso dos dados da API do Gmail está em conformidade com a
+      <a href="https://developers.google.com/terms/api-services-user-data-policy" target="_blank">
+        Política de Dados do Usuário dos Serviços de API do Google
+      </a>, incluindo os requisitos de Uso Limitado.
+    </p>
+
+    <h2>5. Compartilhamento de Dados</h2>
+    <p>
+      Não vendemos, alugamos nem compartilhamos seus dados com terceiros. O único serviço externo
+      com o qual a extensão se comunica é a API do Gmail (Google) para os fins descritos acima.
+    </p>
+
+    <h2>6. Assinatura e Pagamentos</h2>
+    <p>
+      O Seasonal Jobs Auto Apply é oferecido como assinatura paga com período de avaliação gratuita.
+      O processamento de pagamentos é realizado por provedores terceiros (como Stripe ou similar).
+      Não armazenamos os dados do seu cartão de pagamento. Consulte a política de privacidade do
+      provedor de pagamento para detalhes sobre como os dados de cobrança são tratados.
+    </p>
+
+    <h2>7. Exclusão de Dados</h2>
+    <p>Como todos os dados são armazenados localmente no seu dispositivo, você pode excluí-los a qualquer momento:</p>
+    <ul>
+      <li>Removendo a extensão do Chrome (isso exclui todos os dados armazenados)</li>
+      <li>Usando a opção "Limpar dados do site" do navegador para o armazenamento da extensão</li>
+    </ul>
+    <p>
+      Para revogar o acesso ao Gmail, acesse
+      <a href="https://myaccount.google.com/permissions" target="_blank">Permissões da Conta Google</a>
+      e remova o Seasonal Jobs Auto Apply.
+    </p>
+
+    <h2>8. Privacidade de Menores</h2>
+    <p>
+      Esta extensão não é direcionada a menores de 13 anos. Não coletamos intencionalmente
+      nenhuma informação de crianças.
+    </p>
+
+    <h2>9. Alterações nesta Política</h2>
+    <p>
+      Podemos atualizar esta política ocasionalmente. A data de "Última atualização" no topo
+      refletirá quaisquer alterações. O uso continuado da extensão após as alterações constitui
+      aceitação da política atualizada.
+    </p>
+
+    <h2>10. Contato</h2>
+    <p>
+      Para dúvidas ou preocupações sobre esta política de privacidade, entre em contato:<br>
+      <strong>Lucas Correa</strong><br>
+      <a href="mailto:lucaascorrrea@gmail.com">lucaascorrrea@gmail.com</a>
+    </p>
+
+    <footer>© 2026 Lucas Correa · Seasonal Jobs Auto Apply</footer>
+  </div>
+
+</div>
+
+<script>
+  function switchLang(lang) {
+    document.querySelectorAll('.policy').forEach(p => p.classList.remove('active'));
+    document.querySelectorAll('.lang-btn').forEach(b => b.classList.remove('active'));
+    document.getElementById('policy-' + lang).classList.add('active');
+    event.target.classList.add('active');
+  }
+</script>
+</body>
+</html>
